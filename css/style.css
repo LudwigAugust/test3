@@ -1,0 +1,154 @@
+body {
+    margin: 0; 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Alumni Sans', sans-serif;   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+div, p, form, input, button, span, a, ul, li {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {    
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav_link {
+    font-size: 20px;
+    padding: 0 30px ;
+    color: rgb(172, 172, 172);
+
+}
+
+.navLinks.red {
+    color: red;
+}
+
+.nav_link:hover {
+    
+    opacity: 80%;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    padding: 25px;
+}
+
+.header.black {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav_link.white {
+    color: white;
+}
+
+.section {
+    padding: 520px 0;
+}
+
+.section2,
+.section4 {
+    background-color: rgb(206, 206, 206);
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.footer {
+    padding: 50px;
+    background-color: black;
+}
+
+#button-up{
+    display: none;	
+    opacity:0.5;
+    filter:alpha(opacity=50);
+    position: fixed;
+    right: 20px;
+    bottom: 100px;			
+    color: #000;
+    transition: .3s;
+}
+
+#button-up:hover{
+    cursor: pointer;
+    opacity: 1;
+    filter:alpha(opacity=100);
+    transition: .3s;
+    color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+    .nav {
+        display: none;
+    }
+    .menu-burger__header {
+        position: relative; /* задаем относительное позиционирование */
+        width: 40px; /* определяем размеры блока */
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+        
+    }
+    .menu-burger__header span, .menu-burger__header:after, .menu-burger__header:before{
+        height: 3px;
+        width: 100%;
+        position: absolute;
+        background: #515758;
+        margin: 0 auto;
+    }
+    .menu-burger__header span{
+        top: 21px;
+    }
+    .menu-burger__header:after, .menu-burger__header:before{
+        content: '';
+    }
+    .menu-burger__header:after{
+        bottom: 5px;
+    }
+    .menu-burger__header:before{
+        top: 15px;
+    }
+    header {
+        height: 60px;
+    }
+    .content-wrapper {
+        margin-top: 48px;
+    }
+}
+
